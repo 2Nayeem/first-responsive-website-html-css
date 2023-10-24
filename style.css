@@ -1,0 +1,540 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+  }
+ 
+  nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #04043c;
+    padding: 0 50px 0 80px;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+  }
+
+  .logo{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  nav ul{
+    display: flex;
+  }
+
+  nav ul li{
+    list-style-type: none;
+    margin: 0 10px;
+  }
+
+  nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: 0.5s;
+  }
+
+  nav ul li a:hover{
+    background-color: white;
+    color: black;
+  }
+
+  nav ul li:first-child a{
+    background-color: white;
+    color: black;
+  }
+
+  #click{
+    display: none;
+  }
+
+  label{
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+
+  header{
+    background-image: url('img/black-apple2.jpg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -1;
+  }
+
+  /* main section start  */
+
+.section1{
+  background-color: #242491;
+}
+  
+.section3main{
+  width: 1100px;
+  margin: 0px auto;
+  padding: 100px 0;
+}
+
+.section3title{
+  text-align: center;
+  
+}
+
+.section3title > h2{
+  margin: 10px 0;
+  font-size: 40px;
+  color: white;
+}
+
+.section3title h4{
+  color: white;
+  font-size: 18px;
+}
+
+.section3allbox{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+
+.section3box{
+  background-color: white;
+  padding: 25px 35px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.section3box p{
+  text-align: justify;
+}
+
+.section3box:hover{
+  background-color: lime;
+}
+
+.section3box > h3{
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.section3box > i{
+  font-size: 40px;
+}
+
+
+/* section two start */
+
+
+
+.section2main{
+  width: 1000px;
+  margin: 100px auto;
+}
+
+.section2title{
+  font-size: 25px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+
+.section2imgtext{
+  display: flex;
+  justify-content: space-between;   
+  margin-top: 100px;
+}
+
+.section2img{
+  height: 500px;
+  width: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+}
+
+.section2img > img{
+  max-width: 100%;
+
+}
+
+.section2text{
+  width: 500px;
+  padding-bottom: 40px;
+}
+
+.section2text > h4{
+  color: #C81C1C;
+  margin-top: 40px;
+}
+
+.section2text  h3{
+  font-size: 25px;
+  margin: 20px 0;
+}
+.section2text > button{
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #008000;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.section2text > button:hover{
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+
+
+
+
+
+
+
+  /* responsive start */
+
+  @media only screen and (max-width: 1200px) {
+   
+   
+    .logo{
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+   }
+   
+   nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #0a0a75;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 30px;
+        transition: all 0.5s ease;
+    }
+
+    nav ul li{
+        margin: 50px 0;
+    }
+
+    nav ul li a{
+        font-size: 22px;
+    }
+
+    nav ul li a:hover{
+        background: none;
+        color: red;
+    }
+
+    nav ul li:first-child a{
+        background-color: #0a0a75;
+        color: red;
+    }
+
+    label{
+        display: block;
+    }
+    #click:checked ~ label i::before{
+        content: "\f00d";
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+
+    /* hero area */
+
+
+    header{
+        background-image: url('img/black-apple1.jpg');
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+
+  
+
+  }
+
+  @media only screen and (max-width:1180px) {
+     
+.section3main{
+  width: 580px;
+  margin: 0px auto;
+  padding: 50px 0;
+}
+
+.section3title{
+  text-align: center;
+  
+}
+
+.section3title > h2{
+  margin: 7px 0;
+  font-size: 30px;
+  color: white;
+}
+
+.section3title h4{
+  color: white;
+  font-size: 15px;
+}
+
+.section3allbox{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+  text-align: center;
+  margin: 30px 0;
+}
+
+
+.section3box{
+  background-color: white;
+  padding: 30px 30px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.section3box p{
+  text-align: justify;
+}
+
+.section3box:hover{
+  background-color: lime;
+}
+
+.section3box > h3{
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+.section3box > i{
+  font-size: 30px;
+}
+
+
+/* section two  */
+
+
+
+/* section two start */
+
+.section2main{
+  width: 580px;
+  margin: 70px auto;
+}
+
+.section2title{
+  font-size: 25px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+
+.section2imgtext{
+  display: inline-block;
+
+  margin: 100px auto;
+}
+
+.section2img{
+  height: 700px;
+  width: 600px;
+  
+ 
+
+
+}
+
+.section2img > img{
+  max-width: 100%;
+
+}
+
+.section2text{
+  width: 500px;
+  padding-bottom: 40px;
+  
+}
+
+.section2text > h4{
+  color: #C81C1C;
+  margin-top: 40px;
+}
+
+.section2text  h3{
+  font-size: 25px;
+  margin: 20px 0;
+}
+.section2text > button{
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #008000;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.section2text > button:hover{
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+
+ 
+  }
+
+
+  @media only screen and (max-width:688px) {
+     
+    .section3main{
+      width: 280px;
+      margin: 0px auto;
+      padding: 30px 0;
+    }
+    
+    .section3title{
+      text-align: center;
+      
+    }
+    
+    .section3title > h2{
+      margin: 7px 0;
+      font-size: 20px;
+      color: white;
+    }
+    
+    .section3title h4{
+      color: white;
+      font-size: 10px;
+    }
+    
+    .section3allbox{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-column-gap: 15px;
+      text-align: center;
+      margin: 20px 0;
+    }
+    
+    
+    .section3box{
+      background-color: white;
+      padding: 30px 30px;
+      border-radius: 10px;
+      transition: 0.5s;
+    }
+    
+    .section3box p{
+      text-align: justify;
+    }
+    
+    .section3box:hover{
+      background-color: lime;
+    }
+    
+    .section3box > h3{
+      font-size: 15px;
+      margin: 8px 0;
+    }
+    
+    .section3box > i{
+      font-size: 30px;
+    }
+
+
+    
+
+/* section two start */
+
+
+
+.section2main{
+  width: 280px;
+  margin: 30px auto;
+}
+
+.section2title{
+  font-size: 15px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+
+
+.section2imgtext{
+  display: inline-block;
+
+  margin: 50px auto;
+}
+
+.section2img{
+  height: 350px;
+  width: 300px;
+  
+ 
+
+
+}
+
+.section2img > img{
+  max-width: 100%;
+
+}
+
+.section2text{
+  width: 300px;
+  padding-bottom: 30px;
+  
+}
+
+.section2text > h4{
+  color: #C81C1C;
+  margin-top: 30px;
+}
+
+.section2text  h3{
+  font-size: 20px;
+  margin: 15px 0;
+}
+.section2text > button{
+  margin-top: 20px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: white;
+  background-color: #008000;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.section2text > button:hover{
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+}
+
+ 
+     
+      }
