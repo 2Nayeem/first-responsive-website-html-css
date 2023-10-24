@@ -139,11 +139,15 @@
 
 /* section two start */
 
-
+.section2{
+  background-color: #856ab3;
+}
 
 .section2main{
   width: 1000px;
-  margin: 100px auto;
+  margin: 0px auto;
+  padding: 100px 0;
+  color: white;
 }
 
 .section2title{
@@ -204,6 +208,166 @@
 }
 
 
+/* section four44 start  */
+
+
+
+.section44main{
+  display: flex;
+  margin: 0 200px;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+  color: white;
+}
+
+
+#section44a{
+  background-image: url('img/diver.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 150px 0;
+}
+
+.section44text h4{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.section44text ul{
+  margin: 20px 0;
+}
+
+.section44text{
+  background-color: rgba(0, 0, 0, 0.424);
+  padding: 40px;
+  margin-bottom: 20px;
+}
+
+.section44text a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background-color: green;
+  padding: 10px 30px;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.section44text a:hover{
+  background-color: white;
+  color: black;
+}
+
+
+.section44allbox{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+.section44singlebox{
+  background-color: #fff;
+  color: black;
+  padding: 40px 20px;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid lime;
+}
+
+.section44singlebox h4{
+  font-size: 20px;
+  padding: 10px 0 20px 0;
+}
+
+/* section55 start  */
+
+
+.section55{
+  background-color: #242491;
+  padding: 100px 0;
+  color: white;
+}
+.section55main{
+  display: flex;
+  margin: 0 200px;
+  gap: 50px;
+}
+
+
+.section55img{
+  width: 400px;
+  margin-bottom: 15px;
+}
+.section55img img{
+  width: 100%;
+}
+.section55imgtext p{
+  margin: 20px 0;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.section55text h3{
+  font-size: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid red;
+  margin-bottom: 15px;
+}
+
+
+.section55imgtext h4{
+  font-size: 25px;
+}
+
+.section55text a{
+  text-decoration: none;
+  background-color: green;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 20px;
+  display: inline-block;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: 0.5s;
+     
+}
+
+.section55text a:hover{
+  background-color: white;
+  color: black;
+}
+
+.section55icon i{
+  background-color: white;
+  color: black;
+  padding: 10px 30px;
+  margin-top: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -213,6 +377,8 @@
 
   @media only screen and (max-width: 1200px) {
    
+
+
    
     .logo{
     font-size: 20px;
@@ -334,6 +500,16 @@
   font-size: 30px;
 }
 
+/* section44 start  */
+
+.section44main{
+  display: block;
+  margin: 0 70px;
+  align-items: center;
+  color: white;
+}
+
+
 
 /* section two  */
 
@@ -341,9 +517,14 @@
 
 /* section two start */
 
+
+.section2{
+  background-color: #856ab3;
+}
 .section2main{
   width: 580px;
-  margin: 70px auto;
+  margin: 0px auto;
+  padding: 70px 0;
 }
 
 .section2title{
@@ -404,6 +585,18 @@
   color: black;
 }
 
+
+/* section55 start  */
+.section55main{
+  display: flex;
+  margin: 0 70px;
+
+}
+
+.section55img {
+  width: 250px;
+}
+ 
  
   }
 
@@ -471,10 +664,13 @@
 /* section two start */
 
 
-
+.section2{
+  background-color: #856ab3;
+}
 .section2main{
   width: 280px;
-  margin: 30px auto;
+  margin: 0px auto;
+  padding: 30px 0;
 }
 
 .section2title{
@@ -535,6 +731,32 @@
   color: black;
 }
 
- 
-     
+/* section44 start  */
+
+.section44main{
+  display: block;
+  margin: 0 30px;
+  align-items: center;
+  color: white;
+}
+
+.section44allbox{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
+}
+
+/* section 55 start  */
+
+.section55main{
+  display: block;
+  margin: 0 30px;
+
+}
+
+.section55img {
+  width: 310px;
+}
+
+  
       }
